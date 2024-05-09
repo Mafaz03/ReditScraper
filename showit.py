@@ -43,3 +43,24 @@ def show_images(links_, title = None, figsize=(15,15), sub_title=None, noframe=T
   print(f"{failed} post did not have images, or failed to fetch")
   plt.tight_layout()
   plt.show()
+
+
+def show_batch(sample_batch, max = 25, X = 'image', y = 'y', cmap=None, **kwargs):
+  if max:
+    images = sample_batch[X][:max]
+    labels = sample_batch[y][:max]
+  else:
+    images = sample_batch[X]
+    labels = sample_batch[y]
+
+  img_len = images.shape[0]
+  row = int(math.sqrt(img_len))
+  img_len = row ** 2
+
+  fig, axes = plt.subplots(row, row, figsize=(25,25))
+  axes = axes.flatten()
+
+  for i in range(img_len):
+    axes[i].imshow(images[i], **kwargs)
+    axes[i].set_title(labels[i])
+    axes[i].axis('off')
