@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h1>ScrapeditDataset</h1>
+  <h1>Scrapedit</h1>
 
   <h2>Overview</h2>
 
-  <p>ScrapeditDataset is a Python class designed for scraping images from Reddit subreddits and creating PyTorch datasets. It facilitates the collection of image data from various subreddits, allowing for easy integration into machine learning pipelines or data analysis projects.</p>
+  <p>Scrapedit is a Python class designed for scraping images from Reddit subreddits and creating PyTorch datasets. It facilitates the collection of image data from various subreddits, allowing for easy integration into machine learning pipelines or data analysis projects.</p>
 
   <h2>Key Features</h2>
 
@@ -27,6 +27,7 @@
     <li><strong>Initialization:</strong> Instantiate the ScrapeditDataset class with a list of subreddit names and optional parameters for customization.</li>
     <li><strong>Data Loading:</strong> Access the dataset like any other PyTorch dataset, allowing for seamless integration into machine learning workflows.</li>
     <li><strong>Data Analysis:</strong> Use the provided visualization functions to gain insights into the distribution of data sources and explore the collected dataset.</li>
+    <li><strong>Model Training:</strong> Utilize the ScrapeditDataset as a DataLoader for training machine learning models. Integrate it with PyTorch's DataLoader for efficient batch processing and model training.</li>
   </ol>
 
   <h2>Requirements</h2>
