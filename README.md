@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <code>
+    pip3 install scrapeddit
+    pip install scrapeddit
+  </code>
   <h1>Scrapedit</h1>
 
   <h2>Overview</h2>
